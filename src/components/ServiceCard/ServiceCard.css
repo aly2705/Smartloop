@@ -1,0 +1,32 @@
+.servicii {
+  background-color: var(--lila);
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: color 2s ease;
+  transition: 0.3s ease-in-out;
+}
+
+.publicIcon {
+  border-radius: 50px;
+  width: 50%;
+  height: 50%;
+}
+.servicii:hover {
+  transform: scale(1.1);
+  transition: 0.1s ease-in-out;
+}
+
+.servicii:active{
+    transform: scale(1.1);
+    transition: 0.1s ease-in-out;
+}
+
+.textCard{
+    color: var(--text);
+  
+}

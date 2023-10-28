@@ -1,0 +1,16 @@
+.publicServDisplay {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+
+  body{
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}

@@ -1,0 +1,23 @@
+
+
+
+/* PRIVATE PAGE */
+
+.privateServiceDisplay{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+/* PRIVATE PAGE end */
+
+/* BUTTONS PAGE */
+.buttonServiceDisplay{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+/* BUTTONS PAGE  END*/

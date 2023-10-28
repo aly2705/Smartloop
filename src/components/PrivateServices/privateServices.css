@@ -1,0 +1,60 @@
+.privateCard{
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.privateSrv{
+    background-color: var(--lila);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    border-radius: 15px;
+}
+
+.prvImg{
+    background-color: var(--lila);
+    width: 100%;
+    border-radius: 15px;
+}
+.privContainer{
+    display: grid;
+  
+    align-items: left;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+    color: var(--text);
+    border-radius: 15px 0 0 0;
+    
+
+}
+
+
+.btnAcces {
+  background-color: var(--rosu);
+  border: 2px solid var(--text);
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: var(--text);
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  touch-action: manipulation;
+   will-change: transform;
+   padding: 0.5rem;
+align-self: end;
+width: 40%;
+text-align: center;
+}
+
+
+.btnAcces:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.btnAcces:active {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}

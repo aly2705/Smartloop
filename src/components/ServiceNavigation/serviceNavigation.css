@@ -1,0 +1,23 @@
+.button-serv-nav{
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+}
+
+.btn-nav{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+}
+
+.nav-pill{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    background-color: var(--lila);
+    width:20rem;
+    height: 5rem;
+    border-radius: 50px;
+}
+
