@@ -6,7 +6,7 @@ function ServiceCard({ type, src }) {
     <div>
       <div className="servicii">
         <img className="publicIcon" src={src} alt="" />
-        <p className="textCard">{type} </p>
+        <p className="textCard">{type}</p>
       </div>
     </div>
   );

@@ -5,12 +5,13 @@
 } */
 
 .login-form{
-    min-width: 50%;
+    width:30rem;
+    margin: 0 auto;
+    margin-top: 3rem;
     background-color: var(--lila);
-    position: fixed;
-    top: 8vh;
-    left: 50%;
-    transform: translate(-50%, 50%);
+    /* top: 8vh;
+    left: 50%; */
+    /* transform: translate(-50%, 50%); */
     display: grid;
     color: #444;
     padding: 2rem 3rem;
@@ -27,6 +28,8 @@
 
 .login-form h2{
     margin: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
 }
 
 .form-group{

@@ -1,0 +1,17 @@
+.public-details-page{
+    padding: 2rem 4rem;
+}
+
+
+.service-title{
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+
+.pubSearch{
+    display: flex;
+    
+    align-items: flex-end;
+    width: 100%;
+    justify-content: flex-end;
+}

@@ -13,10 +13,10 @@ const Landing = () => {
 
       <div className="buttonServiceDisplay">
         <NavLink className="buttonServiceDisplay" to="/public-services">
-          <ButtonService type="publice" />
+          <ButtonService type="Servicii Publice" />
         </NavLink>
         <NavLink className="buttonServiceDisplay" to="/private-services">
-          <ButtonService type="private" />
+          <ButtonService type="Servicii Private" />
         </NavLink>
       </div>
     </div>

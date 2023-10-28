@@ -1,17 +1,13 @@
 import React from "react";
-import ServiceCard from "../../components/ServiceCard/ServiceCard";
 import "./DevPage.css";
-import ServiceNavigation from "../../components/ServiceNavigation/ServiceNavigation";
-import PrivateServices from "../../components/PrivateServices/PrivateServices";
-import ButtonService from "../../components/ButtonService/ButtonService";
+import Footer from "../../components/Footer/Footer";
+import BackButton from "../../components/BackButton/BackButton";
 import Contact from "../../components/Contact/Contact";
-import Accordeon from "../../components/Accordeon/Accordeon";
-
+import Search from "../../components/Search/Search";
 const DevPage = () => {
   return (
     <div>
-      <Contact />
-      <Accordeon />
+      <Search />
     </div>
   );
 };

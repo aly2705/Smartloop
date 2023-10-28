@@ -1,34 +1,41 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto&family=Rubik:ital,wght@1,800&display=swap');
 
 :root {
-  --text: #FFFFFB; 
-  --violet: #5B5F97;
-  --lila:#B8B8D1; 
-  --rosu:#FF6B6C; 
-  --background: #2F3150; 
-  --background-lighter: #393b5d;
-  --verde: #57A773;
+  --text-var: 255, 255, 251; 
+  --violet-var: 91, 95, 151;
+  --lila-var:184, 184, 209;
+  --verde-var: 87, 167, 115;
+  --rosu-var:255, 107, 108; 
+  --lila: #b8b8d1 ;
+  --violet:#5B5F97 ; 
+  --text:#FFFFFB ; 
+  --verde:#57A773 ; 
+  --rosu: #ff6b6c; 
+  --background:  #393b5d;
+  --background-lighter: #2F3150;
+  
 }
 
 *{
   box-sizing: border-box;
+  
 }
 
 
+
 body {
+  font-family: 'Roboto';
   box-sizing: border-box;
   background: var(--black);
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
   width: 100%;
   min-height: 100vh;
-  flex-wrap: wrap;
+  
   scroll-behavior: smooth;
-  justify-content: space-between;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -46,13 +53,26 @@ a, button{
 #root{
   width:100%;
 }
+h1{
+  font-family: 'Rubik';
+}
+h2, h3, h4{
+  font-family: 'Oswald';
+}
 
 .btn{
   width: fit-content;
   background-color: var(--violet);
-    color: #fff;
+    color: var(--text);
     font-weight: 600;
     padding: .6rem 1.4rem;
     border-radius: 0.5rem;
     cursor: pointer;
+}
+
+@media only screen and (min-width: 724px)
+{
+  body{
+    font-size: 120%;
+  }
 }

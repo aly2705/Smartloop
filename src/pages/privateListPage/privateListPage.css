@@ -1,0 +1,19 @@
+.privateServiceDisplay{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 724px){
+    .privateServiceDisplay{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

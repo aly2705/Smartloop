@@ -34,3 +34,14 @@
     justify-content: center;
     padding-top: 2rem;
 }
+
+.containerf{
+    display: flex;
+    align-items: left;
+}
+
+#chbox{
+    display: flex;
+    flex-direction: row;
+}
+

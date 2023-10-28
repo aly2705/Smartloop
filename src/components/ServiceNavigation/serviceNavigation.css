@@ -1,23 +1,26 @@
-.button-serv-nav{
-    padding: 1rem 2.5rem;
-    border-radius: 50px;
-}
 
 .btn-nav{
     display: flex;
     justify-content: center;
     align-content: center;
     align-self: center;
+    
+    padding: 1rem 3rem;
+    border-radius: 50rem;
+    background-color: rgba(var(--violet-var), 0.5);
 }
-
+.active{
+  background-color: rgba(var(--violet-var), 1);
+}
 .nav-pill{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
-    background-color: var(--lila);
-    width:20rem;
+    background-color: rgba(var(--lila-var));
+    width:25rem;
     height: 5rem;
     border-radius: 50px;
+    align-self: center;
 }
 

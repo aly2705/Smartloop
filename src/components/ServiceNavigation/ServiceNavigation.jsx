@@ -1,6 +1,6 @@
 import React from "react";
 import "./serviceNavigation.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Button({ children }) {
   return <button className=" button-serv-nav">{children}</button>;
@@ -8,13 +8,23 @@ function Button({ children }) {
 
 function ServiceNavigation() {
   return (
-    <div className="daisy-join nav-pill">
-      <Link className="btn-nav" to={"/PublicServicesPage"}>
+    <div className="daisy-join nav-pill ">
+      <NavLink
+        className={({ isActive }) =>
+          isActive ? "  btn-nav  active" : "btn-nav "
+        }
+        to={"/public-services"}
+      >
         <Button>Public</Button>
-      </Link>
-      <Link className="btn-nav" to={"/PrivateServicesPage"}>
+      </NavLink>
+      <NavLink
+        className={({ isActive }) =>
+          isActive ? "  btn-nav  active" : "btn-nav "
+        }
+        to={"/private-services"}
+      >
         <Button>Privat</Button>
-      </Link>
+      </NavLink>
     </div>
   );
 }

@@ -4,10 +4,12 @@
 
 
 .app{
+  font-family: 'Roboto';
   display: grid;
-  grid-template-rows: 5rem auto;
+  grid-template-rows: 6rem auto 6rem;
   width:100%;
-  height: 100vh;
+  min-height: 100vh;
+  
 }
 
 .header{

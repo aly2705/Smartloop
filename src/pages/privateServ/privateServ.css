@@ -1,0 +1,22 @@
+.btnSignup{
+    background-color: var(--rosu);
+}
+
+.register-paragraph{
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+.register-paragraph a{
+    display: block;
+    margin-top: 1rem;
+}
+
+.center{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding-top: 1rem;
+}

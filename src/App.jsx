@@ -10,7 +10,8 @@ import { useAuth } from "./context/auth-context";
 import logo from "./assets/logo-2.png";
 import PrivateListPage from "./pages/privateListPage/privateListPage";
 import SignUpFormPage from "./pages/signUpForm/SignUpFormPage";
-
+import PublicListPage from "./pages/publicListPage/PublicListPage";
+import Footer from "./components/Footer/Footer";
 function App() {
   const { isLoggedIn, logout } = useAuth();
 
@@ -26,21 +27,40 @@ function App() {
       </header>
       <main>
         <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/dev" element={<DevPage />} />
+          {isLoggedIn && <Route path="/" element={<LandingPage />} />}
+          {isLoggedIn && <Route path="/dev" element={<DevPage />} />}
           {!isLoggedIn && <Route path="/login" element={<LoginPage />} />}
-          <Route path="/services" element={<ServicesPage />} />
-          <Route path="/public-services" element={<PublicServicesPage />} />
-          <Route path="/private-services" element={<PrivateServicesPage />} />
-          <Route path="/private-list" element={<PrivateListPage />} />
-          <Route path="/signup-page" element={<SignUpFormPage />} />
-
+          {isLoggedIn && <Route path="/services" element={<ServicesPage />} />}
+          {isLoggedIn && (
+            <Route path="/public-services" element={<PublicServicesPage />} />
+          )}
+          {isLoggedIn && (
+            <Route path="/private-services" element={<PrivateServicesPage />} />
+          )}
+          {isLoggedIn && (
+            <Route
+              path="/private-list/:serviceId"
+              element={<PrivateListPage />}
+            />
+          )}
+          {isLoggedIn && (
+            <Route path="/signup-page" element={<SignUpFormPage />} />
+          )}
+          {isLoggedIn && (
+            <Route
+              path="/public-list/:serviceId"
+              element={<PublicListPage />}
+            />
+          )}
           <Route
             path="/*"
             element={<Navigate to={isLoggedIn ? "/" : "/login"} replace />}
           />
         </Routes>
       </main>
+      <footer>
+        <Footer />
+      </footer>{" "}
     </div>
   );
 }

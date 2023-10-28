@@ -1,3 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.accordeon{
+    margin: 2rem 0;
+}
+
+.collapse-content *{
+    padding: 1.4rem 0;
+}
+.btn{
+    padding: 1rem;
+}

@@ -6,11 +6,15 @@
     padding: 1rem;
     justify-content: space-evenly;
     gap: 1rem;
-  }
-
-  body{
-    background-color: var(--background);
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+    margin-top: 1rem;
+ }
+body{
+  background-color: var(--background);
+}
+.center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding-top: 1rem;
 }
